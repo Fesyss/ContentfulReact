@@ -1,0 +1,9 @@
+[
+    {
+      "objectID": "1",
+      "title": "What is your favorite color?",
+      "possibleAnswers": ["Red", "Blue", "Green", "Yellow"],
+      "answer": ["Red"]
+    }
+  ]
+  
