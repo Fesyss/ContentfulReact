@@ -32,8 +32,8 @@ While Algolia is technically set up on the page, it's not fully functional yet â
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Fesyss/ContentfulReact.git
+cd ContentfulReact
 ```
 ### 2. Install Dependencies
 ```bash
