@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import QuizPage from './components/QuizPage';
 import Results from './components/Results';
 import contentfulService from './services/contentfulService';
+import ThemeToggle from './components/ThemeToggle';
 import './index.css'; 
 
 function App() {
@@ -32,13 +33,18 @@ function App() {
   if (error) {
     return <div>Error loading quiz data: {error.message}</div>;
   }
-
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<QuizPage quizzes={quizzes} />} />
-        <Route path="/results" element={<Results />} />
-      </Routes>
+      <div className="container">
+        <header>
+          {/* ThemeToggle will always be visible */}
+          <ThemeToggle />
+        </header>
+        <Routes>
+          <Route path="/" element={<QuizPage quizzes={quizzes} />} />
+          <Route path="/results" element={<Results />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

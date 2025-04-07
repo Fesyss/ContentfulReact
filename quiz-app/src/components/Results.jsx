@@ -12,14 +12,16 @@ const Results = () => {
   };
 
   return (
-    <div>
+    <div className='quizResult-container'>
       <h1>Quiz Results</h1>
       <p>You got {score} out of {total} questions correct!</p>
-      <button onClick={handleRestart}>Restart Quiz</button>
-      <hr />
+      <button onClick={handleRestart} style={{}}>Restart Quiz</button>
       <AlgoliaSearch />
     </div>
   );
 };
 
 export default Results;
+// display: flex,
+// flexdirection: column,
+// alignItems: center,
